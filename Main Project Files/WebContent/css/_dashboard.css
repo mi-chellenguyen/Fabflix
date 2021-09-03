@@ -1,0 +1,42 @@
+.container {
+    display: block;
+    position: relative;
+    width: 35rem;
+    padding: 3rem 3rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+span {
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+.add-star {
+	display: inline-block;
+	text-align: center;
+}
+
+.add-movie {
+	display: inline-block;
+	text-align: center;
+}
+
+.show-metadata {
+	display: inline-block;
+	text-align: center;
+}
+
+.features-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	display: block;
+	color: #eb4d4b;
+	transition: 0.25s;
+}
+
+.features-text:hover {
+	color: #c0392b;
+}

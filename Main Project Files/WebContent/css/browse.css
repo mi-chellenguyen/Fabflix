@@ -1,0 +1,25 @@
+.container {
+    display: block;
+    position: relative;
+   	min-width: 23rem;
+    padding: 3rem 3rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+span {
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+.genre-block {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.title-block {
+	margin-left: 10px;
+	margin-right: 10px;
+}

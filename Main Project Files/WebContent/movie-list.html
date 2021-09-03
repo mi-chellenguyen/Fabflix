@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Load jQuery and Bootstrap JS -->
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!-- Load our own CSS file -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/movie-list.css">
+	
+    <title>Fabflix Search Results</title>
+</head>
+
+<body>
+
+	<nav class="nav navbar navbar-expand-lg navbar-light sticky-top">
+		<a class="brand" href="main.html">Fabflix</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+	    	<ul class="navbar-nav">
+	    		<li class="nav-item" >
+	  				<a class="advsearch-text" href="employee-login.html">employee login</a>
+		      	</li>
+		      	<li class="nav-item" >
+	  				<a class="advsearch-text" href="advanced-search.html">advanced search</a>
+		      	</li>
+		      	<li class="nav-item" >
+	  				<a class="fas fa-search browse-button" href="browse.html"><p class="browse-text">browse</p></a>
+		      	</li>
+	      		<li class="nav-item" >
+		        	<form id="add-to-cart-form" action="cart.html" method="GET">
+	                	<input id="task" type="hidden" name="task" value="view">
+		            	<input id="movie_id" type="hidden" name="movie_id" value="NA"/>
+						<input id="quantity" type="hidden" name="quantity" value="0"/>
+		        		<a onclick="document.getElementById('add-to-cart-form').submit()" class="fas fa-shopping-cart shopping-cart" href="#"><p class="cart-text">cart</p></a>
+		        	</form>
+		      	</li>
+	    	</ul>
+    	</div>
+	</nav> 
+	
+	<div id="container">
+		<h1 align=center class="page-title display-4"><b>Movie Listing Results</b></h1>
+		<div class="container" style="background-color: rgba(250, 249, 249, .8);">
+			<div class="num-of-results"></div>
+			 
+			 <span><b>Sort By:&nbsp;&nbsp;</b></span>
+			
+			<form id="sort-by-form" action="#">
+				<input type="radio" name="sort-by" value="title_asc" id="title_asc">Title ASC
+				<input type="radio" name="sort-by" value="title_desc" id="title_desc">Title DESC
+				<input type="radio" name="sort-by" value="rating_asc" id="rating_asc">Rating ASC
+				<input type="radio" name="sort-by" value="rating_desc" id="rating_desc">Rating DESC
+			</form>
+		</div> 
+		<div id=movie_table_body class="display-data row justify-content-center" style='width: 100%;'></div>
+	</div>
+		
+	<div class="pagination-container">
+		<button class="prev fas fa-backward" onclick="onClickPrev()"></button>
+            <span class="page select-span"></span>
+        <button class="next fas fa-forward" onclick="onClickNext()"></button> 
+        
+        <div class="styled-select">
+        	<span class="select-span">Movies Per Page:&nbsp;&nbsp;</span>
+			<select id="movies-per-page" onchange="onChangeMoviesPerPage()">
+				<option id="10">10</option>
+			    <option id="25">25</option> 
+			    <option id="50">50</option>
+			    <option id="100">100</option>
+			</select>
+        </div>
+       
+    </div>
+
+    <footer class="footer" style="padding:10px; background-color: rgba(250, 249, 249, .8);">
+		<p style="text-align: right; color: #eb4d4b; margin: 0;"><i>Michelle Nguyen, Katrina Dang</i></p>
+	</footer>
+
+	<!-- Load our own JS file -->
+	<script type='text/javascript' src="movie-list.js"></script>
+		
+</body>
+<html>

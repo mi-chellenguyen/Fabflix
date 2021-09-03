@@ -1,0 +1,49 @@
+.container {
+    display: block;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+   	min-width: 40rem;
+   	margin: 5rem 0;
+    width: 25%;
+    padding: 3rem 3rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+span {
+	font-weight: 700;
+	font-size: 16pt;
+}
+
+hr {
+	height: 3px;
+	background-color: rgb(235,77,75,.5);
+  	border-radius: 20px;
+  	width: 100%; 
+}
+
+table {
+	position: relative;
+	width: 100%;
+}
+
+a {
+	color: #eb4d4b;
+	transition: .25s;	
+}
+
+.returnHome-text{
+	Cursor: pointer;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	display: inline;
+	text-align: center;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #c0392b;
+}

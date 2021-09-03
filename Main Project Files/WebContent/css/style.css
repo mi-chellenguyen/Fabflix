@@ -1,0 +1,205 @@
+.autocomplete-suggestions { 
+	border: 1px solid #999; background: #FFF; overflow: auto; 
+	}
+.autocomplete-suggestion { 
+	padding: 2px 5px; white-space: nowrap; overflow: hidden; 
+	}
+.autocomplete-selected { 
+	background: #F0F0F0; 
+	}
+.autocomplete-suggestions strong { 
+	font-weight: normal; color: #3399FF; 
+	}
+.autocomplete-group { 
+	padding: 2px 5px; 
+	}
+.autocomplete-group strong { 
+	display: block; border-bottom: 1px solid #000; 
+	}
+	
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+  	background: url('../images/background.jpg') no-repeat center center fixed;
+ 	background-size: cover;
+}
+
+a {
+	transition: 0.25s;
+	color: #eb4d4b;
+    text-decoration: none;
+}
+
+a:hover {
+	color: #c0392b;
+	text-decoration: none;	
+}
+
+.shopping-cart {
+	color: #eb4d4b;
+	transition: 0.25s;
+	border: 0;
+	background-color: transparent;
+	margin-left: 0.5rem;
+}
+
+.shopping-cart:hover {
+	text-decoration: none;
+	color: #c0392b;
+}
+
+.cart-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	display:inline;
+	margin-left: 0.5rem;
+	padding: 0 30px 0 0;
+}
+
+.nav {
+	padding: 0 16px;
+	background-color: rgba(250, 249, 249, .9);
+}
+
+.navbar-toggler {
+	color: #eb4d4b;
+}
+
+.brand {
+	margin: 0.3rem 0;
+	color: #eb4d4b;
+	font-size: 1.9rem;
+}
+
+.brand:hover {
+	text-decoration: none;
+	color: #c0392b;
+	transition: 0.25s;
+}
+
+.footer {
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;  	
+}
+
+.page-title {
+	margin-top: 1rem;
+	color: white;
+}
+
+.display-data {
+	margin: 0;
+}
+
+.advsearch-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	display: block;
+	padding-right: 3rem;	
+	color: #eb4d4b;
+	transition: 0.25s;
+}
+
+.advsearch-text:hover {
+	color: #c0392b;
+}
+
+.browse-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	display:inline;
+	margin-left: 0.5rem;
+	padding: 0 30px 0 0;
+	color: #eb4d4b;
+	transition: 0.25s;
+}
+
+.browse-text:hover {
+	color: #c0392b;
+}
+
+.browse-button {
+	color: #eb4d4b;
+	transition: 0.25s;
+}
+
+.browse-button:hover {
+	text-decoration: none;
+	color: #c0392b;
+}
+
+#container{
+    min-height: calc(100vh - 110px);
+}
+
+.search-box {	
+	display: inline;	
+	border: 2px solid #eb4d4b;	
+	border-radius: 24px;	
+	padding: 0.2rem 0.7rem;	
+	font-size: 0.9rem;	
+	min-width: 17rem;	
+}	
+
+ .search-box:focus {	
+	outline: none;	
+	border-color: #c0392b;
+}	
+
+ .search-button {	
+	display: inline;	
+	border-radius:100%;	
+	background: transparent;	
+	border: 0;	
+	color: #eb4d4b;	
+	margin-right: 1.5rem;	
+	padding: 0.5rem;	
+	transition: 0.25s;	
+	font-size: 1.5rem;	
+}	
+
+ .search-button:hover {	
+	cursor: pointer;	
+}	
+
+ .search-button:focus {	
+	outline: none;	
+}	
+
+
+.addToCartBtn {
+	width: 2.5rem;
+	color: white;
+	Cursor: pointer;
+	border: 0;
+	padding: 0.3rem;
+	background-color: #eb4d4b;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.addToCartBtn:hover {
+	background-color: #c0392b;
+}
+
+.title-container {
+	text-align: center; 
+	margin: auto;
+}
+
+.returnToBrowse {
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+	padding: .3rem .5rem;
+}
+
+.employee-text {
+	color: #eb4d4b;
+	margin-left: 1rem;
+}
+
