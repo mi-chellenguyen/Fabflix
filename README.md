@@ -1,6 +1,6 @@
 # Fabflix
 
-Fabflix is a web appplication that allows a user to search, browse, and purchase movies. This was a class project for CS 122B at University of California Irvine taken during Winter of 2019. It was developed using Java EE framework(Servlets, JSP, JSTL, EL, JDBC) along with front-end technologies(HTML,CSS,Javascript,jQuery,AJAX,BootStrap). This application used to be hosted and deployed on AWS platform but has now been shut down.
+Fabflix is a web application that allows a user to search, browse, and purchase movies. This was a class project for CS 122B at University of California Irvine taken during Winter of 2019. It was developed using Java EE framework(Servlets, JSP, JSTL, EL, JDBC) along with front-end technologies(HTML,CSS,Javascript,jQuery,AJAX,BootStrap). This application used to be hosted and deployed on AWS platform but has now been shut down.
 
 **Developed by:** Michelle Nguyen, Katrina Dang
 
